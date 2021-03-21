@@ -276,12 +276,12 @@ margin-bottom: 50px;
 }
 
 .team .title-studio{
-padding-top: 94px;
 margin-bottom: 50px;
 }
 
 .team{
   background-color: var(--filter-button-color);
+  padding-top: 94px;
 }
 
 .team .team-text{
@@ -306,9 +306,12 @@ padding: 20px 24px;
   margin-bottom: 10px;
 }
 
-.team .title-studio-gallery,
 .team .text-studio-gallery{
   margin: 0px;
+}
+
+.team .title-studio-gallery{
+  padding: 0px;
 }
 
 .portfolio .title-portfolio{
