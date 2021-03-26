@@ -130,7 +130,7 @@ margin-top: 30px;
 }
 
 .menu-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 50px;
 }
 
 .header .menu-item .menu-item-link {
@@ -499,25 +499,26 @@ color:#FFFFFF
 color: rgba(255, 255, 255, 0.6);
 }
 
-.footer .logo{
-  padding-top: 60px;
+.footer .information .logo{
+  display: flex;
   margin-bottom: 20px;
 }
 
-.footer .address {
+.footer {
   padding-bottom: 60px;
 }
 
-.address .map{
-margin-bottom: 9px;
-}
-
-.address .info:not(:last-of-type) {
+.information .link{
+  display: flex;
   margin-bottom: 9px;
 }
 
-.footer .address .link{
-  padding: 0;
+.address .link{
+  display: inline-block;
+}
+
+.information .address .last {
+  margin-bottom: 0;
 }
 
 /*overlay*/
@@ -650,7 +651,7 @@ margin-bottom: 9px;
 }
 
 .social-connect{
-  padding-top: 72px;
+  padding-top: 12px;
 }
 
 .information,
@@ -687,4 +688,8 @@ font-size: 14px;
 .footer .social-icons-link:focus {
   fill: var(--light-text-color);
   background-color: var(--accent-color);
+}
+
+.footer{
+  padding-top: 60px;
 }
