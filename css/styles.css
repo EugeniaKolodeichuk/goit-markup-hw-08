@@ -510,15 +510,14 @@ color: rgba(255, 255, 255, 0.6);
 
 .information .link{
   display: flex;
+}
+
+.address a:not(:last-of-type) {
   margin-bottom: 9px;
 }
 
 .address .link{
   display: inline-block;
-}
-
-.information .address .last {
-  margin-bottom: 0;
 }
 
 /*overlay*/
