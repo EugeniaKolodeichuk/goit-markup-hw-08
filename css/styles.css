@@ -129,10 +129,6 @@ margin-top: 30px;
   display: inline-flex;
 }
 
-/*.header{
-  position: relative;
-}*/
-
 .menu-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -148,9 +144,8 @@ margin-top: 30px;
   height: 4px;
   width: 100%;
   border-radius: 2px;
-  bottom: 0;
+  bottom: -1px;
   background-color: var(--accent-color);
-/*margin-top: 32px;*/
 }
 
 .header .menu-item .menu-item-link {
@@ -394,6 +389,53 @@ padding: 20px 24px;
   margin-bottom: 0px;
 }
 
+/*portfolio-overlay*/
+.portfolio-thumb{
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-full-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33,150,243,0.9);
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-overlay{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.portfolio-item:hover .portfolio-overlay{
+  opacity: 1;
+}
+
+.portfolio-item:hover .portfolio-full-overlay{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.text-overlay{
+margin-bottom: 0;
+padding: 63px 24px;
+font-weight: 400;
+font-size: 18px;
+line-height: 1.56;
+color:var(--light-text-color);
+}
+
 /*our clients*/
 
 .company{
@@ -483,14 +525,6 @@ padding-top: 32px;
 padding-bottom: 32px;
 }
 
-/*.header .link:not(.current){
-padding-bottom: 32px;
-}
-
-/*.header .current{
-  margin-bottom: 32px;
-}*/
-
 .header .container {
   display: flex;
   justify-content: flex-end;
@@ -563,7 +597,7 @@ background-color: var(--dark-bg-color);
 }
 
 .map{
-color:#FFFFFF
+color:var(--light-text-color);
 }
 
 .info{
@@ -626,16 +660,6 @@ color: var(--accent-color)
   margin-right: 10px;
   fill: currentColor;
 }
-
-/*.mail-icon:hover,
-.mail-icon:focus{
-  fill:var(--accent-color);
-}
-
-.phone-icon:hover,
-.phone-icon:focus{
-  fill:var(--accent-color);
-}*/
 
 .details::before{
   display: inline-flex;
@@ -701,7 +725,7 @@ color: var(--accent-color)
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: var(--light-text-color);
   fill: #AFB1B8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -749,7 +773,6 @@ flex-basis: calc((100% - 280px) / 4);
 .social-connect .footer-connect{
 display: flex;
 line-height: 1.14;
-letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--light-text-color);
 margin-bottom: 20px;
@@ -815,12 +838,9 @@ font-size: 14px;
   background-color: var(--light-text-color);
   }
 
-.close-icon{
+.close-icons{
   display: block;
   border: none;
   height: 30px;
   width: 30px;
-  /*color: var(--light-text-color);*/
 }
-
-/*<img class="close" src="./images/icons/close.svg" width="30" height="30" alt="Закрыть окно" />*/
