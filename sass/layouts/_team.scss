@@ -1,6 +1,11 @@
 .team{
-  background-color: $filter-button-color;
+  background-color: var(--filter-button-color);
   padding-top: 94px;
+  @extend %section-padding;
+}
+
+.team__title{
+  @extend %title-text;
 }
 
 .team__list{
@@ -10,12 +15,10 @@ text-align: center;
 }
 
 .team__item{
-background: $light-text-color;
+background: var(--light-text-color);
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
-flex-basis: calc((100% - 30px * 4) / 4);
-margin-left: 30px;
-margin-top: 30px;
+--grid__item: 4;
 }
 
 .team__label{
@@ -28,15 +31,9 @@ margin-top: 30px;
   padding: 0px;
 font-size: 16px;
 font-weight: 500;
-color: $text-color;
+color: var(--text-color);
 }
 
 .team__position{
   margin-bottom: 16px;
 }
-
-.connection__list--centered {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-    }
