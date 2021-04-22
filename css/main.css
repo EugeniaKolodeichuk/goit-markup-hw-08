@@ -159,13 +159,13 @@ address {
   color: #000000;
 }
 
-.page-footer__logo {
-  display: flex;
-  margin-bottom: 20px;
-}
-
 .logo__studio--light {
   color: var(--light-text-color);
+}
+
+.logo--margin-bottom {
+  display: flex;
+  margin-bottom: 20px;
 }
 
 .backdrop {
