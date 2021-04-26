@@ -23,6 +23,13 @@
           <a class="link logo logo--margin-right" href="./index.html"
             ><span class="logo__web">Web</span><span class="logo__studio--dark">Studio</span></a
           >
+          <button type="button" class="nav__button" aria-expanded="false" data-menu-button>
+            <svg width="40px" height="40px" aria-label="Переключатель мобильного меню" aria-controls="menu-container">
+              <use class="nav__icon nav__icon--cross" href="./images/icons/icons.svg#icon-cross"></use>
+              <use class="nav__icon nav__icon--menu" href="./images/icons/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="nav__mobile-menu" id="menu-container" data-menu>Menu</div>
           <ul class="nav__list list">
             <li class="nav__item"><a class="nav__link nav__link--current link" href="./index.html">Студия</a></li>
             <li class="nav__item"><a class="nav__link nav__link--dark link" href="./portfolio.html">Портфолио</a></li>
@@ -126,7 +133,7 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="list team__list grid">
             <li class="grid__item team__item">
-              <img src="./images/studio/demianenko.jpg" width="270" alt="Игорь Демьяненко" />
+              <img src="./images/studio/demianenko.jpg" alt="Игорь Демьяненко" />
               <div class="team__label">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__position" lang="en">Product Designer</p>
@@ -163,7 +170,7 @@
               </div>
             </li>
             <li class="grid__item team__item">
-              <img src="./images/studio/repina.jpg" width="270" alt="Ольга Репина" />
+              <img src="./images/studio/repina.jpg" alt="Ольга Репина" />
               <div class="team__label">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__position" lang="en">Frontend Developer</p>
@@ -200,7 +207,7 @@
               </div>
             </li>
             <li class="grid__item team__item">
-              <img src="./images/studio/tarasov.jpg" width="270" alt="Николай Тарасов" />
+              <img src="./images/studio/tarasov.jpg" alt="Николай Тарасов" />
               <div class="team__label">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__position" lang="en">Marketing</p>
@@ -237,7 +244,7 @@
               </div>
             </li>
             <li class="grid__item team__item">
-              <img src="./images/studio/ermakov.jpg" width="270" alt="Михаил Ермаков" />
+              <img src="./images/studio/ermakov.jpg" alt="Михаил Ермаков" />
               <div class="team__label">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__position" lang="en">UI Designer</p>
@@ -349,7 +356,7 @@
         </div>
         <div class="connection">
           <h2 class="connection__title">присоединяйтесь</h2>
-          <ul class="list connection__list connection__list--start">
+          <ul class="list connection__list connection__list--footer">
             <li class="connection__item">
               <a href="" class="link connection__link connection-link--white" target="_blank" rel="noopener noreferrer">
                 <svg class="connection__icon">
@@ -450,5 +457,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

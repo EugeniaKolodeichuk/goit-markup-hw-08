@@ -1,4 +1,5 @@
-.nav {
+@media screen and (min-width: 1200px) {
+  .nav {
 display: inline-flex;
 align-items: center;
 margin-right: auto;
@@ -65,4 +66,5 @@ color: var(--accent-color);
   height: 16px;
   margin-right: 10px;
   fill: currentColor;
+}
 }
