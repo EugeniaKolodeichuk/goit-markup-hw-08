@@ -9,8 +9,6 @@ line-height: 1.15;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--text-color);
-/* padding: 0;
-margin: 0; */
 margin-bottom: 12px;
 }
 
@@ -100,8 +98,7 @@ line-height: 1.71;
 
 .checkbox__icon{
   display: block;
-  /* margin-right: 7px; */
-  min-width: 15px;
+    min-width: 15px;
   min-height: 15px;
   border: 2px solid var(--text-color);
   border-radius: 2px;
@@ -126,8 +123,7 @@ line-height: 1.71;
 
 .checkbox__link{
 display: inline-flex;
-  /* margin-left: 3px; */
-  color: var(--accent-color);
+   color: var(--accent-color);
 }
 
 .main-form__submit{

@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity var(--animation);
@@ -24,7 +24,6 @@
   position: absolute;
   display: flex;
   max-width: 450px;
-  /* max-height: 609px; */
   padding: 40px;
   top: 50%;
   left: 50%;
@@ -33,6 +32,7 @@
   border-radius: 4px;
   background-color: var(--light-text-color);
   transition: transform var(--animation);
+  overflow-y: scroll;
 
 @media screen and (min-width: 1200px) {
   min-width: 528px;

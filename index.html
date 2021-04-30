@@ -137,7 +137,14 @@
           <ul class="grid list">
             <li class="grid__item service__item">
               <div class="service__thumb">
-                <img src="./images/studio/box_1.jpg" width="370" alt="Набор текста" />
+                <picture>
+                  <source
+                    srcset="./images/desktop/box_1.jpg 1x, ./images/desktop/box_1@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+                  <img src="./images/desktop/box_1.jpg" width="370" alt="Набор текста" />
+                </picture>
                 <div class="service__label">
                   <p class="service__text">Десктопные приложения</p>
                 </div>
@@ -145,7 +152,14 @@
             </li>
             <li class="grid__item service__item">
               <div class="service__thumb">
-                <img src="./images/studio/box_2.jpg" width="370" alt="ПО для телефонов" />
+                <picture>
+                  <source
+                    srcset="./images/desktop/box_2.jpg 1x, ./images/desktop/box_2@2x.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="./images/desktop/box_2.jpg" width="370" alt="ПО для телефонов" />
+                </picture>
                 <div class="service__label">
                   <p class="service__text">Мобильные приложения</p>
                 </div>
@@ -153,7 +167,14 @@
             </li>
             <li class="grid__item service__item">
               <div class="service__thumb">
-                <img src="./images/studio/box_3.jpg" width="370" alt="ПО для планшетов" />
+                <picture>
+                  <source
+                    srcset="./images/desktop/box_3.jpg 1x, ./images/desktop/box_3@2x.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="./images/desktop/box_3.jpg" width="370" alt="ПО для планшетов" />
+                </picture>
                 <div class="service__label">
                   <p class="service__text">Дизайнерские решения</p>
                 </div>
@@ -167,7 +188,24 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="list team__list grid">
             <li class="grid__item team__item">
-              <img src="./images/studio/demianenko.jpg" width="270" alt="Игорь Демьяненко" />
+              <picture>
+                <source
+                  srcset="./images/desktop/demianenko-desk.jpg 1x, ./images/desktop/demianenko-desk@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/tablet/demianenko-tab.jpg 1x, ./images/tablet/demianenko-tab@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/mobile/demianenko-mob.jpg 1x, ./images/mobile/demianenko-mob@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/desktop/demianenko-desk.jpg" width="450" alt="Игорь Демьяненко" />
+              </picture>
               <div class="team__label">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__position" lang="en">Product Designer</p>
@@ -204,7 +242,24 @@
               </div>
             </li>
             <li class="grid__item team__item">
-              <img src="./images/studio/repina.jpg" width="270" alt="Ольга Репина" />
+              <picture>
+                <source
+                  srcset="./images/desktop/repina-desk.jpg 1x, ./images/desktop/repina-desk@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/tablet/repina-tab.jpg 1x, ./images/tablet/repina-tab@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/mobile/repina-mob.jpg 1x, ./images/mobile/repina-mob@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/desktop/repina-desk.jpg" width="450" alt="Ольга Репина" />
+              </picture>
               <div class="team__label">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__position" lang="en">Frontend Developer</p>
@@ -241,7 +296,25 @@
               </div>
             </li>
             <li class="grid__item team__item">
-              <img src="./images/studio/tarasov.jpg" width="270" alt="Николай Тарасов" />
+              <picture>
+                <source
+                  srcset="./images/desktop/tarasov-desk.jpg 1x, ./images/desktop/tarasov-desk@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/tablet/tarasov-tab.jpg 1x, ./images/tablet/tarasov-tab@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/mobile/tarasov-mob.jpg 1x, ./images/mobile/tarasov-mob@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/desktop/tarasov-desk.jpg" width="450" alt="Николай Тарасов" />
+              </picture>
+
               <div class="team__label">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__position" lang="en">Marketing</p>
@@ -278,7 +351,24 @@
               </div>
             </li>
             <li class="grid__item team__item">
-              <img src="./images/studio/ermakov.jpg" width="270" alt="Михаил Ермаков" />
+              <picture>
+                <source
+                  srcset="./images/desktop/ermakov-desk.jpg 1x, ./images/desktop/ermakov-desk@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/tablet/ermakov-tab.jpg 1x, ./images/tablet/ermakov-tab@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/mobile/ermakov-mob.jpg 1x, ./images/mobile/ermakov-mob@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/desktop/ermakov-desk.jpg" width="450" alt="Михаил Ермаков" />
+              </picture>
               <div class="team__label">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__position" lang="en">UI Designer</p>
