@@ -1,5 +1,6 @@
 .backdrop{
   position: fixed;
+  z-index: 104;
   top: 0;
   left: 0;
   width: 100vw;
@@ -32,11 +33,13 @@
   border-radius: 4px;
   background-color: var(--light-text-color);
   transition: transform var(--animation);
-  overflow-y: scroll;
+
+  @media screen and (min-width: 480px) {
+  min-width: 450px;
+}
 
 @media screen and (min-width: 1200px) {
   min-width: 528px;
-  min-height: 581px;
 }
 }
 
@@ -52,12 +55,21 @@
   height: 30px;
   background-color: var(--light-text-color);
   border-radius: 50%;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   color: rgb(0,0,0);
   transition: color var(--animation);
+  padding: 0px;
 
-&:hover,
-&:focus{
-  color: var(--accent-color);
+&:hover .modal__icon,
+&:focus .modal__icon {
+  fill: var(--accent-color);
 }
+}
+
+
+
+.modal__icon--close{
+  display: block;
+  width: 11px;
+  height: 11px;
 }

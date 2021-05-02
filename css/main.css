@@ -211,6 +211,7 @@ address {
 
 .backdrop {
   position: fixed;
+  z-index: 104;
   top: 0;
   left: 0;
   width: 100vw;
@@ -243,13 +244,17 @@ address {
   border-radius: 4px;
   background-color: var(--light-text-color);
   transition: transform var(--animation);
-  overflow-y: scroll;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    min-width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
     min-width: 528px;
-    min-height: 581px;
   }
 }
 
@@ -268,10 +273,18 @@ address {
   border: 1px solid rgba(0, 0, 0, 0.1);
   color: black;
   transition: color var(--animation);
+  padding: 0px;
 }
 
-.modal__button--close:hover, .modal__button--close:focus {
-  color: var(--accent-color);
+.modal__button--close:hover .modal__icon,
+.modal__button--close:focus .modal__icon {
+  fill: var(--accent-color);
+}
+
+.modal__icon--close {
+  display: block;
+  width: 11px;
+  height: 11px;
 }
 
 .main-form__title {
@@ -914,7 +927,7 @@ address {
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
-  max-width: 480px;
+  max-width: 100%;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -934,7 +947,7 @@ address {
 
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
+    max-width: 100%;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero-tab.jpg);
   }
 }

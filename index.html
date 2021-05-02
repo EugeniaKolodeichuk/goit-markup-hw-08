@@ -522,7 +522,11 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button aria-label="Закрыть окно" class="modal__button--close" data-modal-close><b>&#10005;</b></button>
+        <button aria-label="Закрыть окно" class="modal__button--close" data-modal-close>
+          <svg class="modal__icon">
+            <use class="modal__icon--close" href="./images/icons/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
         <form class="main-form" autocomplete="off">
           <h2 class="main-form__title">Оставьте свои данные, мы вам перезвоним</h2>
           <div class="main-form__field">
